@@ -24,10 +24,7 @@ class window(QWidget):
             self.n=0
             random.shuffle(ls)
 
-    def font_but(self,obj,x,y):
-        obj.setFont(QFont("Times",24))
-        obj.move(x,y)
-        obj.setFixedSize(70,70)
+   
 
     def font(self, obj, x, y):
         obj.setFont(QFont("Times", 24))
@@ -380,7 +377,10 @@ class window(QWidget):
             self.but1.hide()
             self.n += 1
         self.num.setText(str(self.n))
-
+	 def font_but(self,obj,x,y):
+        obj.setFont(QFont("Times",24))
+        obj.move(x,y)
+        obj.setFixedSize(70,70)
 oyna=window()
 oyna.show()
 app.exec_()
